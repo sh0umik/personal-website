@@ -138,12 +138,12 @@ const ExperienceItem = ({
   return (
     <li className="relative print:py-2">
       <div className="group relative grid pb-1 print:pb-0 transition-all print:grid-cols-1 print:gap-1 sm:grid-cols-12 sm:gap-8 md:gap-6 lg:hover:!opacity-100">
-        <header className="relative mt-1 text-xs font-semibold sm:col-span-2">
-          <time dateTime={startDate} title={startDate}>
+        <header className="relative mt-1 text-xs font-semibold sm:col-span-2 text-skin-base">
+          <time dateTime={startDate} title={startDate} className="text-skin-base">
             {startYear}
           </time>{' '}
           -{' '}
-          <time dateTime={endDate || undefined} title={endDate || undefined}>
+          <time dateTime={endDate || undefined} title={endDate || undefined} className="text-skin-base">
             {endYear}
           </time>
         </header>

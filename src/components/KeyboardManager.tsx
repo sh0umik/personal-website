@@ -124,7 +124,10 @@ export const KeyboardManager = () => {
           });
         });
       } catch (error) {
-        console.error('Failed to load hotkeypad:', error);
+        // Silently fail in production, only log in development
+        if (process.env.NODE_ENV === 'development') {
+          console.error('Failed to load hotkeypad:', error);
+        }
       }
     };
 

@@ -63,14 +63,16 @@ export const ThemeSwitch = () => {
   return (
     <div className="no-print inline-flex items-center">
       <div className="group/theme flex items-center gap-2">
-        <label htmlFor="themeSwitch" className="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45">
+        <label htmlFor="themeSwitch" className="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45 sr-only">
           <ThemeIcon />
+          <span>Theme</span>
         </label>
         <select
           id="themeSwitch"
           name="themeSwitch"
           value={theme}
           onChange={handleChange}
+          aria-label="Select theme preference"
           className="focus:ring-skin-hue ring-skin-muted block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset focus:ring-2 sm:text-sm sm:leading-6"
         >
           <option value="system">System</option>

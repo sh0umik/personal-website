@@ -143,7 +143,15 @@ export const Hero = () => {
           </footer>
         </div>
         <figure className="print:hidden w-fit relative">
-          <img className="shadow-lg shadow-skin-hues aspect-square w-32 rounded-2xl bg-cover" src={image} alt={name} />
+          <img 
+            className="shadow-lg shadow-skin-hues aspect-square w-32 rounded-2xl bg-cover" 
+            src={image} 
+            alt={name}
+            width={128}
+            height={128}
+            loading="eager"
+            fetchPriority="high"
+          />
           <div className="pointer-events-none absolute -inset-2">
             <div className="absolute -inset-y-8 right-0 w-px bg-skin-hue/50 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
             <div className="absolute -inset-y-8 left-0 w-px bg-skin-hue/50 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>

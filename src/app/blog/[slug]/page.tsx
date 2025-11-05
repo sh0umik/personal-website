@@ -35,7 +35,10 @@ async function getBlogPost(slug: string) {
     const fileContents = await fs.readFile(filePath, "utf8");
     return fileContents;
   } catch (error: any) {
-    console.error("Error reading blog post:", error?.message || error);
+    // Silently fail in production, only log in development
+    if (process.env.NODE_ENV === 'development') {
+      console.error("Error reading blog post:", error?.message || error);
+    }
     return null;
   }
 }

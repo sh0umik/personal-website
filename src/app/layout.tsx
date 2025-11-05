@@ -7,7 +7,11 @@ import type { CV } from '@/types';
 const cv = cvData as unknown as CV;
 const { name, label, summary, url, theme } = cv.basics;
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+});
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -72,6 +76,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: url,
+  },
+  other: {
+    'color-scheme': 'light dark',
   },
 };
 

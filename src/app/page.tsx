@@ -13,6 +13,10 @@ import { Navigation } from '@/components/Navigation';
 import cvData from '@/data/cv.json';
 import type { CV } from '@/types';
 
+// Enable BFCache for better performance
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 const cv = cvData as unknown as CV;
 const { name, label, summary, url } = cv.basics;
 
