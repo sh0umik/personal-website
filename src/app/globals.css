@@ -1,0 +1,379 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text-base: 0, 0, 0;
+    --color-text-muted: 120, 120, 120;
+    --color-text-inverted: 255, 255, 255;
+    --color-fill: 245, 245, 245;
+    --muted: 200, 200, 200;
+    --color: 249, 115, 22;
+    --color-button-accent: 249, 115, 22;
+    --color-button-accent-hover: 55, 55, 55;
+    --color-button-muted: 244, 239, 238;
+  }
+  
+  [data-theme="blue"] {
+    --color-text-base: 15, 23, 42;
+    --color-text-muted: 100, 116, 139;
+    --color-text-inverted: 240, 240, 240;
+    --color-fill: 203, 213, 225;
+    --muted: 148, 163, 184;
+    --color: 59, 130, 246;
+    --color-button-accent: 59, 130, 246;
+    --color-button-accent-hover: 0, 185, 255;
+    --color-button-muted: 226, 232, 240;
+  }
+  
+  [data-theme="red"] {
+    --color-text-base: 28, 25, 23;
+    --color-text-muted: 100, 100, 100;
+    --color-text-inverted: 245, 245, 245;
+    --color-fill: 231, 229, 228;
+    --muted: 220, 220, 220;
+    --color: 239, 68, 68;
+    --color-button-accent: 239, 68, 68;
+    --color-button-accent-hover: 220, 50, 70;
+    --color-button-muted: 245, 245, 245;
+  }
+  
+  [data-theme="green"] {
+    --color-text-base: 40, 40, 40;
+    --color-text-muted: 110, 110, 110;
+    --color-text-inverted: 230, 230, 230;
+    --color-fill: 236, 252, 203;
+    --muted: 189, 220, 147;
+    --color: 101, 163, 13;
+    --color-button-accent: 101, 163, 13;
+    --color-button-accent-hover: 120, 220, 120;
+    --color-button-muted: 211, 235, 173;
+  }
+  
+  [data-theme="cyber"] {
+    --color-text-base: 15, 15, 15;
+    --color-text-muted: 144, 135, 5;
+    --color-text-inverted: 240, 240, 240;
+    --color-fill: 252, 255, 64;
+    --muted: 50, 50, 50;
+    --color: 235, 21, 43;
+    --color-button-accent: 235, 21, 43;
+    --color-button-accent-hover: 0, 185, 255;
+    --color-button-muted: 249, 239, 6;
+  }
+  
+  .dark {
+    --color-text-base: 255, 255, 255;
+    --color-text-muted: 150, 150, 150;
+    --color-text-inverted: 255, 255, 255;
+    --color-fill: 18, 18, 18;
+    --muted: 36, 36, 36;
+    --color: 227, 77, 10;
+    --color-button-accent: 227, 77, 10;
+    --color-button-accent-hover: 231, 121, 43;
+    --color-button-muted: 26, 26, 26;
+  }
+  
+  .dark[data-theme="blue"] {
+    --color-text-base: 248, 250, 252;
+    --color-text-muted: 148, 163, 184;
+    --color-text-inverted: 240, 240, 240;
+    --color-fill: 2, 6, 23;
+    --muted: 51, 65, 85;
+    --color: 59, 130, 246;
+    --color-button-accent: 59, 130, 246;
+    --color-button-accent-hover: 0, 185, 255;
+    --color-button-muted: 30, 41, 59;
+  }
+  
+  .dark[data-theme="red"] {
+    --color-text-base: 231, 229, 228;
+    --color-text-muted: 168, 162, 158;
+    --color-text-inverted: 245, 245, 245;
+    --color-fill: 28, 25, 23;
+    --muted: 45, 45, 45;
+    --color: 248, 113, 113;
+    --color-button-accent: 248, 113, 113;
+    --color-button-accent-hover: 220, 50, 70;
+    --color-button-muted: 120, 113, 108;
+  }
+  
+  .dark[data-theme="green"] {
+    --color-text-base: 230, 230, 230;
+    --color-text-muted: 104, 124, 104;
+    --color-text-inverted: 230, 230, 230;
+    --color-fill: 10, 20, 10;
+    --muted: 54, 64, 54;
+    --color: 132, 204, 22;
+    --color-button-accent: 132, 204, 22;
+    --color-button-accent-hover: 120, 220, 120;
+    --color-button-muted: 34, 44, 34;
+  }
+  
+  .dark[data-theme="cyber"] {
+    --color-text-base: 252, 255, 64;
+    --color-text-muted: 125, 125, 125;
+    --color-text-inverted: 240, 240, 240;
+    --color-fill: 15, 15, 15;
+    --muted: 50, 50, 50;
+    --color: 90, 237, 251;
+    --color-button-accent: 90, 237, 251;
+    --color-button-accent-hover: 0, 185, 255;
+    --color-button-muted: 25, 81, 86;
+  }
+  
+  body,
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-skin-base;
+    margin: 0;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+  }
+
+  p {
+    @apply text-sm text-skin-muted;
+    line-height: 1.5;
+    text-wrap: pretty;
+  }
+
+  .print {
+    display: none !important;
+  }
+
+  .dev * {
+    @apply border border-red-500/50 bg-red-500/5;
+  }
+  
+  #hotkeypad [data-backdrop] {
+    @apply !bg-zinc-800 !opacity-80;
+  }
+
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+
+    .print {
+      display: block !important;
+    }
+
+    article {
+      break-inside: avoid;
+    }
+  }
+  
+  .dark {
+    color-scheme: dark;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 601px) {
+    .footer-button {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #normal-footer {
+      display: none;
+    }
+
+    .footer-button {
+      background: #fff;
+      position: fixed;
+      border: 1px solid #eee;
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+
+  kbd {
+    @apply bg-skin-muted;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 12px;
+  }
+
+  #hotkeypad {
+    --hotkeypad-bg-kbd: rgb(var(--muted));
+    --hotkeypad-bg-backdrop: rgb(var(--color-fill));
+    --hotkeypad-bg-container: rgb(var(--color-fill));
+    --hotkeypad-bg-item-hover: rgba(var(--color-text), 20%);
+    --hotkeypad-border-container: rgb(var(--muted));
+    --hotkeypad-border-container-hover: rgb(var(--color-fill));
+    --hotkeypad-fg-muted: rgb(var(--muted));
+  }
+
+  @media (prefers-color-scheme: dark) {
+    #hotkeypad {
+      --hotkeypad-bg-kbd: rgb(var(--muted));
+      --hotkeypad-bg-backdrop: rgb(var(--color-fill));
+      --hotkeypad-bg-container: rgb(var(--color-fill));
+      --hotkeypad-bg-item-hover: rgba(var(--color), 10%);
+      --hotkeypad-border-container: rgb(var(--muted));
+      --hotkeypad-border-container-hover: rgb(var(--color-fill));
+      --hotkeypad-fg-muted: rgb(var(--color-text-base));
+    }
+  }
+
+  li::marker {
+    @apply text-skin-hue;
+  }
+
+  main {
+    margin: auto;
+    width: 100%;
+  }
+
+  /* Markdown/Prose Styles */
+  .prose {
+    @apply text-skin-base;
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4 {
+    @apply text-skin-base font-bold mt-8 mb-4;
+  }
+
+  .prose h1 {
+    @apply text-3xl;
+  }
+
+  .prose h2 {
+    @apply text-2xl;
+  }
+
+  .prose h3 {
+    @apply text-xl;
+  }
+
+  .prose h4 {
+    @apply text-lg;
+  }
+
+  .prose p {
+    @apply text-skin-muted mb-4 leading-relaxed;
+  }
+
+  .prose a {
+    @apply text-skin-hue underline hover:no-underline;
+  }
+
+  .prose code {
+    @apply bg-skin-button-muted px-1.5 py-0.5 rounded text-sm text-skin-hue;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  }
+
+  .prose pre {
+    @apply bg-zinc-900 p-4 rounded-lg overflow-x-auto mb-4 border border-zinc-800;
+    background-color: rgb(24, 24, 27);
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0;
+    color: rgb(244, 244, 245);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply text-skin-muted mb-4 ml-6;
+  }
+
+  .prose ul {
+    @apply list-disc;
+  }
+
+  .prose ol {
+    @apply list-decimal;
+  }
+
+  .prose li {
+    @apply mb-2;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-skin-hue pl-4 italic text-skin-muted my-4;
+  }
+
+  .prose strong {
+    @apply text-skin-base font-semibold;
+  }
+
+  .prose table {
+    @apply w-full border-collapse mb-4;
+  }
+
+  .prose th,
+  .prose td {
+    @apply border border-skin-muted px-4 py-2;
+  }
+
+  .prose th {
+    @apply bg-skin-button-muted text-skin-base font-semibold;
+  }
+
+  .prose img {
+    @apply rounded-lg my-4;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 0mm;
+}
+

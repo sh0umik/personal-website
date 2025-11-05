@@ -1,0 +1,378 @@
+{
+  "basics": {
+    "name": "Fahim Shariar Shoumik",
+    "label": "Backend Engineer | Golang Specialist | Distributed Systems Architect",
+    "image": "/me_avatar.png",
+    "email": "fahim.shoumik@gmail.com",
+    "phone": "",
+    "url": "http://shoumik.me",
+    "summary": "Tech entrepreneur and backend specialist with 10+ years of experience building scalable systems using Golang, gRPC, and Docker-based microservices. Proven leadership in startups and developer platforms. Passionate about API-first design, plugin-based extensibility, and headless CMS architectures. Currently building Apito.io, an API development platform. Past projects include FHIR-compliant EHR systems, DevOps consulting, and open-source tooling.",
+    "theme": "default",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Dhaka",
+      "countryCode": "BD",
+      "region": "Bangladesh"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "sh0umik",
+        "url": "https://github.com/sh0umik"
+      },
+      {
+        "network": "Apito",
+        "username": "apito.io",
+        "url": "https://apito.io"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Udbhabon LTD",
+      "position": "Founder & Principal Engineer",
+      "location_type": "On site",
+      "location": "Dhaka, Bangladesh",
+      "url": "https://udbhabon.com",
+      "startDate": "2025-01-01",
+      "endDate": null,
+      "summary": "Founded a vertical SaaS company powered by Apito, focused on supply chains, inventory, hospitals, and restaurants. Built and deployed 6+ client apps used by 4,000+ users across industries. Streamlined backend development using reusable Golang modules. Personally led technical sales, architecture, and delivery.",
+      "responsibilities": [
+        "Founded and built a vertical SaaS company powered by Apito",
+        "Designed and deployed 6+ client applications serving 4,000+ users",
+        "Streamlined backend development using reusable Golang modules",
+        "Led technical sales, architecture, and delivery"
+      ],
+      "achievements": [
+        "Successfully deployed 6+ production applications",
+        "Achieved 4,000+ active users across multiple industries",
+        "Established reusable Golang module architecture"
+      ],
+      "skills": ["Golang", "Microservices", "SaaS", "Apito"]
+    },
+    {
+      "name": "RedQ.io",
+      "position": "AI Engineer",
+      "location_type": "On site",
+      "location": "Dhaka, Bangladesh",
+      "url": "https://redq.io",
+      "startDate": "2024-01-01",
+      "endDate": "2025-01-01",
+      "summary": "Designed and implemented AI-driven marketing campaigns and chatbots for internal vendors. Developed contextual RAG (Retrieval-Augmented Generation) pipelines to enhance AI template generation and search accuracy. Collaborated with cross-functional teams to integrate AI tools seamlessly into existing workflows. Optimized backend processes for improved content discovery and personalization.",
+      "responsibilities": [
+        "Designed and implemented AI-driven marketing campaigns and chatbots",
+        "Developed contextual RAG pipelines for AI template generation",
+        "Integrated AI tools into existing workflows",
+        "Optimized backend processes for content discovery and personalization"
+      ],
+      "achievements": [
+        "Enhanced AI template generation accuracy",
+        "Improved search accuracy through RAG implementation",
+        "Seamlessly integrated AI tools into existing systems"
+      ],
+      "skills": ["AI", "RAG", "Machine Learning", "Python"]
+    },
+    {
+      "name": "Apito LLC",
+      "position": "Founder & Platform Architect",
+      "location_type": "Remote",
+      "location": "US Entity",
+      "url": "https://apito.io",
+      "startDate": "2020-01-01",
+      "endDate": null,
+      "summary": "Created Apito, an open-source API builder & headless CMS with plugin and serverless support. Designed plugin-based architecture using Golang, gRPC, Docker. Developed schema builder, RBAC, role systems, deployment CLI. Powers multiple real-world SaaS and enterprise apps.",
+      "responsibilities": [
+        "Created and architected Apito platform from scratch",
+        "Designed plugin-based architecture using Golang, gRPC, Docker",
+        "Developed schema builder, RBAC, role systems, deployment CLI",
+        "Maintained open-source project with active community"
+      ],
+      "achievements": [
+        "Built Apito from scratch - now powering production SaaS apps",
+        "Open-source project with active community",
+        "Powers multiple real-world SaaS and enterprise applications"
+      ],
+      "skills": [
+        "Golang",
+        "gRPC",
+        "Docker",
+        "Microservices",
+        "Headless CMS",
+        "Plugin Architecture"
+      ]
+    },
+    {
+      "name": "Shikho Technologies Ltd.",
+      "position": "Principal Backend Engineer",
+      "location_type": "On site",
+      "location": "Dhaka, Bangladesh",
+      "url": "https://shikho.com",
+      "startDate": "2020-01-01",
+      "endDate": "2024-01-01",
+      "summary": "Led the backend team for a national-scale EdTech platform serving 100K+ learners. Architected cloud-native hybrid microservices using Golang, MongoDB, ArangoDB. Managed Docker/Kubernetes CI/CD pipelines, performance scaling. Collaborated with product, design, and QA teams on agile delivery.",
+      "responsibilities": [
+        "Led backend team for national-scale EdTech platform",
+        "Architected cloud-native hybrid microservices using Golang, MongoDB, ArangoDB",
+        "Managed Docker/Kubernetes CI/CD pipelines and performance scaling",
+        "Collaborated with product, design, and QA teams on agile delivery"
+      ],
+      "achievements": [
+        "Successfully scaled platform to serve 100K+ learners",
+        "Built robust microservices architecture",
+        "Implemented efficient CI/CD pipelines"
+      ],
+      "skills": [
+        "Golang",
+        "MongoDB",
+        "ArangoDB",
+        "Docker",
+        "Kubernetes",
+        "Microservices",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Shimahin Ltd (ShopHobe)",
+      "position": "Senior Engineer & Consultant",
+      "location_type": "On site",
+      "location": "Dhaka, Bangladesh",
+      "url": "https://shophobe.com",
+      "startDate": "2017-01-01",
+      "endDate": "2020-01-01",
+      "summary": "Designed and built a modular eCommerce backend for a multi-vendor platform. Implemented DevOps practices with Docker, Redis, Kubernetes. Provided technical consulting on startup scalability and team formation.",
+      "responsibilities": [
+        "Designed and built modular eCommerce backend for multi-vendor platform",
+        "Implemented DevOps practices with Docker, Redis, Kubernetes",
+        "Provided technical consulting on startup scalability and team formation"
+      ],
+      "achievements": [
+        "Built scalable eCommerce platform",
+        "Established DevOps best practices",
+        "Provided successful technical consulting"
+      ],
+      "skills": [
+        "Golang",
+        "Docker",
+        "Redis",
+        "Kubernetes",
+        "eCommerce",
+        "DevOps"
+      ]
+    },
+    {
+      "name": "Upwork",
+      "position": "Independent Freelance Contractor",
+      "location_type": "Remote",
+      "location": "",
+      "url": "https://www.upwork.com",
+      "startDate": "2013-01-01",
+      "endDate": "2017-01-01",
+      "summary": "Delivered full-stack development services to diverse clients and companies across multiple industries. Built and deployed web applications from concept to production, working independently to meet client requirements and deadlines. Collaborated with international teams and gained experience in various technology stacks and business domains.",
+      "responsibilities": [
+        "Delivered full-stack development services to multiple clients and companies",
+        "Built and deployed web applications from scratch to production",
+        "Collaborated with international clients and teams",
+        "Managed project timelines and deliverables independently"
+      ],
+      "achievements": [
+        "Successfully completed multiple freelance projects across various domains",
+        "Built production-ready applications from concept to deployment",
+        "Established strong client relationships and maintained high satisfaction ratings"
+      ],
+      "skills": [
+        "Full-Stack Development",
+        "Client Management",
+        "Project Management",
+        "Freelancing"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Ahsanullah University of Science & Technology",
+      "url": "",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Govt. Technical School & College, Saidpur",
+      "url": "",
+      "area": "Science Track",
+      "studyType": "High School",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "certificates": [],
+  "skills": [
+    {
+      "name": "Golang",
+      "level": "Expert",
+      "keywords": ["Backend", "Microservices", "Distributed Systems"]
+    },
+    {
+      "name": "gRPC",
+      "level": "Expert",
+      "keywords": ["API", "Microservices", "RPC"]
+    },
+    {
+      "name": "Docker",
+      "level": "Expert",
+      "keywords": ["DevOps", "Containers", "Deployment"]
+    },
+    {
+      "name": "Kubernetes",
+      "level": "Expert",
+      "keywords": ["DevOps", "Orchestration", "Containers"]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Expert",
+      "keywords": ["Database", "NoSQL", "Data Storage"]
+    },
+    {
+      "name": "Couchbase",
+      "level": "Expert",
+      "keywords": ["Database", "NoSQL", "Data Storage"]
+    },
+    {
+      "name": "ArangoDB",
+      "level": "Expert",
+      "keywords": ["Database", "NoSQL", "Graph Database"]
+    },
+    {
+      "name": "Redis",
+      "level": "Expert",
+      "keywords": ["Cache", "Database", "In-Memory"]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Intermediate",
+      "keywords": ["Database", "SQL", "Relational"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "keywords": ["Language", "Frontend", "Backend"]
+    },
+    {
+      "name": "React",
+      "level": "Intermediate",
+      "keywords": ["Frontend", "UI", "JavaScript"]
+    },
+    {
+      "name": "Dart",
+      "level": "Intermediate",
+      "keywords": ["Language", "Mobile", "Flutter"]
+    },
+    {
+      "name": "Flutter",
+      "level": "Intermediate",
+      "keywords": ["Mobile", "Framework", "UI"]
+    },
+    {
+      "name": "AWS",
+      "level": "Expert",
+      "keywords": ["Cloud", "DevOps", "Infrastructure"]
+    },
+    {
+      "name": "GCP",
+      "level": "Intermediate",
+      "keywords": ["Cloud", "DevOps", "Infrastructure"]
+    },
+    {
+      "name": "GitLab CI",
+      "level": "Expert",
+      "keywords": ["CI/CD", "DevOps", "Automation"]
+    },
+    {
+      "name": "GitHub Actions",
+      "level": "Expert",
+      "keywords": ["CI/CD", "DevOps", "Automation"]
+    },
+    {
+      "name": "Git",
+      "level": "Expert",
+      "keywords": ["Version Control", "DevOps"]
+    },
+    {
+      "name": "GitHub",
+      "level": "Expert",
+      "keywords": ["Version Control", "Collaboration"]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Scalable Microservice Architecture for Healthcare using Golang and NoSQL",
+      "publisher": "IEEE ICCIT 2017",
+      "releaseDate": "2017-01-01",
+      "url": "",
+      "summary": "Describes FHIR-compliant modular design to replace monolithic healthcare systems."
+    }
+  ],
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Apito CMS",
+      "isActive": true,
+      "description": "Open source API Builder & CMS with serverless functions and CLI. An API builder and headless CMS with plugin and serverless support.",
+      "highlights": [
+        "Open-source API builder & headless CMS",
+        "Plugin-based architecture",
+        "Serverless functions support",
+        "Deployment CLI included"
+      ],
+      "url": "https://apito.io",
+      "github": "https://github.com/apito-io"
+    },
+    {
+      "name": "Apito Bolt",
+      "isActive": true,
+      "description": "MongoDB like NoSQL DB and ORM build on top of bbolt DB.",
+      "highlights": [
+        "MongoDB-like NoSQL database",
+        "Built on top of bbolt DB",
+        "ORM included"
+      ],
+      "url": "",
+      "github": "https://github.com/apito-io/apitoBolt"
+    },
+    {
+      "name": "Jypher",
+      "isActive": true,
+      "description": "Convert JSON into Neo4j Cypher queries.",
+      "highlights": ["JSON to Neo4j Cypher conversion", "Open-source tool"],
+      "url": "",
+      "github": "https://github.com/restra-social/jypher"
+    },
+    {
+      "name": "UriQL",
+      "isActive": true,
+      "description": "Parse URI into Couchbase N1QL syntax.",
+      "highlights": ["URI to N1QL parser", "Open-source tool"],
+      "url": "",
+      "github": "https://github.com/restra-social/uriql"
+    },
+    {
+      "name": "FHIR-Protobuf",
+      "isActive": true,
+      "description": "Protobuf definitions for FHIR resources.",
+      "highlights": [
+        "FHIR-compliant protobuf definitions",
+        "Healthcare standards"
+      ],
+      "url": "",
+      "github": "https://github.com/sh0umik/fhir-protobuff"
+    }
+  ]
+}

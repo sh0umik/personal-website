@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "Building Scalable Microservices with Golang",
+    "description": "Learn how to build scalable microservices architectures using Golang, gRPC, and Docker.",
+    "date": "2025-01-15",
+    "slug": "building-scalable-microservices-golang",
+    "tags": ["Golang", "Microservices", "gRPC", "Docker"]
+  },
+  {
+    "id": "2",
+    "title": "API-First Design: Best Practices",
+    "description": "Exploring API-first design principles and how they can improve your development workflow.",
+    "date": "2025-01-10",
+    "slug": "api-first-design-best-practices",
+    "tags": ["API Design", "Best Practices", "REST"]
+  },
+  {
+    "id": "3",
+    "title": "Headless CMS Architecture Patterns",
+    "description": "Deep dive into headless CMS architecture patterns and when to use them.",
+    "date": "2025-01-05",
+    "slug": "headless-cms-architecture-patterns",
+    "tags": ["Headless CMS", "Architecture", "Content Management"]
+  },
+  {
+    "id": "4",
+    "title": "Plugin-Based Extensibility in Modern Applications",
+    "description": "How to design plugin-based systems that allow for extensibility without compromising stability.",
+    "date": "2024-12-28",
+    "slug": "plugin-based-extensibility",
+    "tags": ["Plugins", "Architecture", "Extensibility"]
+  }
+]
+
