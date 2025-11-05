@@ -40,6 +40,25 @@ async function getBlogPost(slug: string) {
   }
 }
 
+async function getBlogPostSlugs() {
+  const contentDir = path.join(process.cwd(), "src", "app", "blog", "content");
+  try {
+    const files = await fs.readdir(contentDir);
+    return files
+      .filter((file) => file.endsWith(".md"))
+      .map((file) => file.replace(".md", ""));
+  } catch (error) {
+    return [];
+  }
+}
+
+export async function generateStaticParams() {
+  const slugs = await getBlogPostSlugs();
+  return slugs.map((slug) => ({
+    slug,
+  }));
+}
+
 function getBlogMetadata(slug: string) {
   const metadata: Record<
     string,

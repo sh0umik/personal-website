@@ -4,6 +4,8 @@ import path from 'path';
 import cvData from '@/data/cv.json';
 import type { CV } from '@/types';
 
+export const dynamic = 'force-static';
+
 const cv = cvData as unknown as CV;
 const { url } = cv.basics;
 

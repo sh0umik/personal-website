@@ -12,7 +12,7 @@ import { Globe } from '../icons/Globe';
 import cvData from '@/data/cv.json';
 import type { CV } from '@/types';
 
-const cv = cvData as CV;
+const cv = cvData as unknown as CV;
 const { name, label, image, location, profiles, phone, email, url } = cv.basics;
 const { city, region } = location;
 

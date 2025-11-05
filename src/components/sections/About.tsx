@@ -5,7 +5,7 @@ import { Section } from '../Section';
 import cvData from '@/data/cv.json';
 import type { CV } from '@/types';
 
-const cv = cvData as CV;
+const cv = cvData as unknown as CV;
 const { summary } = cv.basics;
 
 export const About = () => {

@@ -7,7 +7,7 @@ import { Git } from '../icons/Git';
 import cvData from '@/data/cv.json';
 import type { CV } from '@/types';
 
-const cv = cvData as CV;
+const cv = cvData as unknown as CV;
 const { projects } = cv;
 
 interface ProjectsProps {

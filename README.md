@@ -102,6 +102,7 @@ pnpm build
 ### Updating Portfolio Data
 
 Edit `src/data/cv.json` to update your portfolio information including:
+
 - Personal information
 - Work experience
 - Education
