@@ -16,25 +16,25 @@ Gitlab Pipeline এর Build চলে কিছু Shared Runner দিয়ে �
 
 জেহুতু Shared Runner আমাদের সমস্যার সমাধান করতে পারবে না তাই একটা আলাদা VPS এ আমরা আমাদের নিজেস Runner বসাব , যেটার মাদ্ধমে আমরা আমাদের সব মাইক্রোসার্ভিস Build করতে পারব ।
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-1.gif)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-1.webp)
 
 Stick with It
 
 প্রথমে Gitlab Pipeline চালু করার জন্য Repo তে গিয়ে CI/CD সেকশন থেকে Pipeline চালু করে নেব আগে ।
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-2.png)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-2.webp)
 
 Start Gitlab CI Pipeline
 
 এরপর Settings > CI/CD > Runner Settings এ গেলে নিচের ছবির মত একটা জিনিস দেখতে পারব । এখানে নির্দেশনা দেওয়া আছে যে নিজের জন্যও Runner বসাতে কি করা লাগবে । এখান থেকে আমাদের শুধু একটা জিনিস লাগবে যেটা হল Registration Token যেটা আমরা নিজের VPS এ Runner সেটআপ করার সময় ব্যবহার করব ।
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-3.png)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-3.webp)
 
 Gitlab without Runner
 
 এখন আমাদের নিজের VPS এ ঢুকে [Gilab Runner](https://docs.gitlab.com/runner/install/)  ইন্সটল করে নেই। এটা একটা CMD Tool এর পরে এই Custom Runner কে আমাদের Gitlab Repo তে নিয়ে আসতে নিচের Conf Snippet টি Copy , Paste করব Terminal Shell এ । অবশ্যই CI_RUNNER_TOKEN এই জায়গায় আপনাদের নিজেস Register Token টকেন দিতে হবে ।
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-4.png)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-4.webp)
 
 Adding Custom Gitlab CI Runner
 
@@ -50,7 +50,7 @@ sudo gitlab-runner register -n \
 
 এটা হয়ে গেলে আমরা আমাদের Gitlab এর Runner Settings সেকশন এ **Runners activated for this project** গিয়ে নিচের ছবির মত একটা ছবি দেখতে পারব ।
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-5.png)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-5.webp)
 
 Gitlab CI with Active Custom Runner.
 
@@ -102,7 +102,7 @@ upgrade:
 
 লাইন ২৪–২৮ঃ এই সব গুলো লাইন Docker কমান্ড , মূলত এই জন্যেই আমাদের Build Environment ( restra/golang-docker-gitlabci ) এ Docker ইন্সটল করে নিয়ে হয়েছে । এখন হয়ত কিছুটা বুঝা যাচ্ছে যে Docker in Docker কেন । লাইন ২৪ এ আমরা একটা Env variable ব্যাবহার করেছি যেটা $ACCESS_TOKEN এর মাদ্ধমে আমরা Gitlab থেকে Runner এ Variable পাঠাচ্ছি ।
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-6.png)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-6.webp)
 
 Setting ENV Variable for Gitlab CI Runner
 
@@ -110,19 +110,19 @@ Setting ENV Variable for Gitlab CI Runner
 
 এখন যদি আমরা কোন Push করি Repo তে তাহলে CI/CD Pipeline এ আমরা দেখবও আমাদের Build শুরু হয়েছে ।
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-7.png)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-7.webp)
 
 CI Job Started
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-8.png)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-8.webp)
 
 Build এ ক্লিক করলে আমরা Build Log দেখতে পারব। এখানে লক্ষ করলে দেখা যাবে এটা প্রথমে আমাদের Docker Image ( restra/golang-docker-gitlabci ) ডাউনলোড করে তার পরে .gitlab-ci.yml এর দুইটা stage এ লিখা কমান্ড গুলো চালাবে আমাদের Docker Image এর মদ্ধে। সব কিছু ঠিক থাকলে আমরা নিচের ছবির মত একটা Log দেখতে পারব , যদি সেটা শেষ হয় Job succeeded দিয়ে তাহলে সব কিছু ঠিক আছে।
 
 যদি আমরা Registry তে যাই তাহলে দেখতে পারব দুইটা Docker Container এখানে জমা হয়েছে । একটা ব্রাঞ্ছ এর নামে আর একটা latest যেমনটা .gitlab-ci.yml এ লিখা হয়েছিল।
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-9.png)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-9.webp)
 
-![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-10.gif)
+![](/blog/continuous-integration-of-golang-with-gitlab-pipeline-part-1-image-10.webp)
 
 Success
 
